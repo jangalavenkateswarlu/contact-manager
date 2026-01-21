@@ -1,0 +1,170 @@
+/* ===== General Page Styling ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fa;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-left: 250px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* ===== App Container ===== */
+#root > div {
+  max-width: 600px;
+  margin: 100px;
+  background: #fff;
+  padding: 150px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* ===== Form Styling ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 15px;  
+}
+form input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  
+}
+
+form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+input{
+padding-left: 350px;
+}
+
+/* ===== Contact List ===== */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9fbfd;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 5px solid #007bff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li strong {
+  font-size: 18px;
+  color: #333;
+}
+
+li span {
+  color: #555;
+}
+
+/* ===== Buttons inside list ===== */
+li button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+/* Edit button */
+li button:nth-child(3) {
+  background: #12c314;
+  color: #eaeeee;
+}
+
+li button:nth-child(3):hover {
+  background: #0ec560;
+}
+
+/* Delete button */
+li button:nth-child(2) {
+  background: #e20808;
+  color: #f3f5f5;
+}
+
+li button:nth-child(2):hover {
+  background: #b52a36;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  #root > div {
+    padding: 12px;
+    margin: 10px;
+  }
+  body{
+    margin:2rem;
+  }
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  li button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #root > div {
+    padding: 40px;
+    margin: 100px;
+  }
+  body{
+    margin:2rem;
+  }
+  form{
+    padding:90px;
+  }
+  
+
+  
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  li button {
+    width: 100%;
+  }
+}
+
